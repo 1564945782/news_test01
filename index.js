@@ -108,8 +108,6 @@ app.use('/flc', require('./module/flc/flc'));
 app.use('/wl', require('./module/wl/wl'));
 
 //资源托管
-app.use('/visitor/uploads', express.static('uploads'));
-app.use('/uploads', express.static('uploads'));
 app.use(express.static('static'));
 
 //设置监听端口
