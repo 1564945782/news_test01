@@ -20,7 +20,7 @@ button,[type="submit"],[type="button"]{
 	content: "";
 	clear: both;
 }
-/* nav */
+/* header  nav */
 #index-nav{
 	color: #fff;
 	height: 36px;
@@ -46,31 +46,61 @@ button,[type="submit"],[type="button"]{
 #index-nav #nav-right{
 	float: right;
 }
-
-#index-wrap{
+/* wrap */
+.wrap{
 	width: 1200px;
+	height: 600px;
 	margin: 0 auto;
-	height: 620px;
-	background-color: skyblue;
+	background-color: #eef;
 }
-#index-menu{
+.menu-box{
 	float: left;
 	width: 130px;
-	height: 100%;
-	background-color: #ccc;
+	height: 600px;
+	background-color: #ddd;
 }
-#index-body{
+.logo{
+	color: #d00;
+	height: 60px;
+	font: 900 28px/60px "微软雅黑";
+	text-align: center;
+}
+.menu-list li{
+	text-align: center;
+	height: 40px;
+	width: 110px;
+	margin: 2px auto;
+	border-radius: 6px;
+	font: 500 16px/40px "微软雅黑";
+}
+.menu-list .active-li{
+	background-color: #e00;
+}
+.menu-list .active-li a{
+	color: #fff;
+}
+.menu-list li a{
+	color: #666;
+}
+.menu-list li a:hover{
+	text-decoration: none;
+}
+.menu-list li:hover{
+	background-color: #e00;
+}
+.menu-list li:hover a{
+	color: #fff;
+}
+.main-box{
 	float: left;
-	width: 660px;
+	width: 670px;
 	height: 100%;
 	margin: 0 30px;
+	background-color: #ccc;
+}
+.others-box{
+	float: left;
+	width: 340px;
+	height: 100%;
 	background-color: #bbb;
 }
-#index-others{
-	float: left;
-	width: 350px;
-	height: 100%;
-	background-color: #aaa;
-}
-
-

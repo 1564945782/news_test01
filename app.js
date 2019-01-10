@@ -27,8 +27,7 @@ app.set('view engine','html');        //注册模板引擎到express
 
 //各种路由
 app.get('/',(req,res)=>{
-	// res.send('今日头条首页的测试')
-	res.render("index.html");
+	res.render("example.html");
 })
 app.get('/flc',(req,res)=>{
 	res.render("./flc/flc.html");
