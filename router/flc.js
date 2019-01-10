@@ -1,6 +1,6 @@
 const router = express.Router();
-router.get('/add',(req,res)=>{
-	res.send('范力川：添加自己想要添加的信息！')
+router.get('/recommend',(req,res)=>{
+	res.render('flc/recommend.html')
 })
 
 

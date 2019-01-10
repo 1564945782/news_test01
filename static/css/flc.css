@@ -1,0 +1,216 @@
+.wrap,.menu-box,.main-box,.others-box{
+	background-color: #fff;
+}
+
+/* recommend.css*/
+#f-turns-box{
+	position: relative;
+	width: 100%;
+	height: 300px;
+	overflow: hidden;
+	margin: 10px 0;
+	background-color: #ccc;
+}
+#f-turns-img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 600px;
+	height: 300px;
+}
+#f-turns-img li{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+#f-turns-img a{
+	display: block;
+}
+#f-turns-img li img{
+	height: 100%;
+	width: 100%;
+}
+#f-turns-img li span{
+	color: #666;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	height: 40px;
+	width: 560px;
+	padding: 0 20px;
+	font: 700 16px/40px "微软雅黑";
+	background-color: rgba(255,255,255,.7);
+}
+#f-turns-txt{
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #fff;
+	text-align: center;
+	width: 70px;
+	height: 100%;
+	background-color: #222;
+}
+#f-turns-txt li{
+	height: 50px;
+	line-height: 50px;
+	cursor: pointer;
+}
+#f-turns-txt li:hover{
+	background-color: #a00;
+}
+#f-not-read{
+	cursor: pointer;
+	color: #fff;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	margin-bottom: 10px;
+	background-color: skyblue;
+}
+#f-not-read button{
+	color: #fff;
+	float: right;
+	font-size: 20px;
+	border: none;
+	padding: 0 5px;
+	line-height: 30px;
+	background-color: transparent;
+}
+#f-search{
+	margin: 10px 0;
+	font-size: 0;
+}
+#f-search input{
+	height: 42px;
+	outline: none;
+	box-sizing: border-box;
+}
+#f-search [type='search']{
+	width: 290px;
+	text-indent: 5px;
+	vertical-align: top;
+	border: 1px solid #00f;
+	border-radius: 6px 0 0 6px;
+}
+#f-search [type='submit']{
+	color: #fff;
+	width: 50px;
+	border: 1px solid #00f;
+	background-color: blue;
+	border-radius: 0 6px 6px 0;
+}
+
+#f-login{
+	width: 100%;
+	height: 240px;
+	overflow: hidden;
+	background-color: #ccc;
+}
+#has-login,#not-login{
+	display: none;
+	height: 200px;
+	width: 300px;
+	margin: 19px auto;
+	background-color: #fff;
+}
+#not-login{
+	/* display: block; */
+	text-align: center;
+}
+#not-login p{
+	color: #666;
+	padding: 15px 30px;
+	font: 12px/20px "微软雅黑";
+}
+#not-login button{
+	color: #fff;
+	font: 700 16px "微软雅黑";
+	height: 38px;
+	width: 240px;
+	border: none;
+	border-radius: 6px;
+	background-color: #e00;
+}
+#not-login button:hover{
+	background-color: #d00;
+}
+#not-login ul{
+	height: 70px;
+	margin: 13px 30px 10px;
+}
+#not-login ul li{
+	cursor: pointer;
+	margin: 0 10px;
+	display: inline-block;
+}
+#not-login ul li img{
+	display: block;
+	height: 42px;
+	width: 42px;
+	border-radius: 50%;
+	margin-bottom: 2px;
+	border: 1px solid #CCCCCC;
+}
+#not-login ul li img:hover{
+	border: 1px solid #888;
+}
+#not-login ul li span{
+	color: #aaa;
+}
+#not-login ul li:hover span{
+	color: #666;
+	font-weight: 900;
+}
+#has-login{
+	text-align: center;
+	display: block;
+}
+#has-login p{
+	text-align: right;
+}
+#has-login p button{
+	color: #999;
+	border: none;
+	padding: 2px 10px;
+	background-color: transparent;
+}
+#has-login p button:hover{
+	color: #000;
+}
+#has-login #head-img{
+	display: block;
+	height: 70px;
+	width: 70px;
+	margin: 7px auto;
+	border-radius: 50%;
+	border: 1px solid #ccc;
+}
+#has-login #user-name{
+	text-align: center;
+	margin: 8px 0;
+	font: 500 18px/30px "微软雅黑";
+}
+#has-login li{
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	padding: 0 40px;
+}
+#has-login li:hover{
+	color: #666;
+}
+#has-login li:first-child{
+	border-right: 1px solid #ddd;
+}
+#has-login li b,#has-login li span{
+	display: block;
+}
+#f-adv-cloths{
+	height: 300px;
+	width: 100%;
+	margin: 15px 0;
+	background-color: #ccc;
+}
+	
+	
