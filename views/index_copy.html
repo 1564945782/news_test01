@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>再现头条</title>
+  <link rel="stylesheet" href="/layui/css/layui.css">
+  <script src="/jquery/jquery-3.3.1.js"></script>
+  <script src="/layui/layui.all.js"></script>
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+  <div class="layui-header">
+    <div class="layui-logo">再现头条</div>
+    <!-- 头部区域（可配合layui已有的水平导航） -->
+    <ul class="layui-nav layui-layout-left">
+      <li class="layui-nav-item"><a href="">天气   成都  晴   1° / 5°  </a></li>
+    </ul>
+    <ul class="layui-nav layui-layout-right">
+      <li class="layui-nav-item">
+        <a href="javascript:;">
+          <img src="/img/bgc02.gif" class="layui-nav-img">
+          登录
+        </a>
+      </li>
+      <li class="layui-nav-item"><a href="">退了</a></li>
+    </ul>
+  </div>
+  
+  <div class="layui-side layui-bg-black">
+    <div class="layui-side-scroll">
+      <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+      <ul class="layui-nav layui-nav-tree"  lay-filter="test">
+        <li class="layui-nav-item layui-nav-itemed">
+          <a class="" href="javascript:;">推荐</a>
+          <dl class="layui-nav-child">
+            <dd><a href="/class/add">1111</a></dd>
+            <dd><a href="/class/">222</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item layui-nav-itemed">
+            <a class="" href="javascript:;">热点</a>
+            <dl class="layui-nav-child">
+              <dd><a href="/stu/add">111</a></dd>
+              <dd><a href="/stu">222</a></dd>
+            </dl>
+          </li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">直播</a>
+          <dl class="layui-nav-child">
+            <dd><a href="javascript:;">111</a></dd>
+            <dd><a href="javascript:;">222</a></dd>
+            <dd><a href="">333</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">科技</a>
+          <dl class="layui-nav-child">
+            <dd><a href="">1111</a></dd>
+            <dd><a href="">2222</a></dd>
+            <dd><a href="">333</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item"><a href="">娱乐</a></li>
+        <li class="layui-nav-item"><a href="">游戏</a></li>
+        <li class="layui-nav-item"><a href="">游戏</a></li>
+        <li class="layui-nav-item"><a href="">游戏</a></li>
+        <li class="layui-nav-item"><a href="">游戏</a></li>
+        <li class="layui-nav-item"><a href="">游戏</a></li>
+        <li class="layui-nav-item"><a href="">游戏</a></li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+<script>
+//注意：导航 依赖 element 模块，否则无法进行功能性操作
+layui.use('element', function(){
+  var element = layui.element;
+  
+  //…
+});
+</script>
+</body>
+</html>

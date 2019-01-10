@@ -19,9 +19,6 @@ global.mydb = mysql.createConnection({
 });
 mydb.connect();
 
-
-
-
 //自定义ejs模板
 app.engine('html',ejs.renderFile);    //定义模板引擎，自定后缀是html
 app.set("views",'views');        //指定模板文件所在的文件夹
@@ -52,7 +49,7 @@ app.use('/wl', require('./router/wl.js'));
 
 
 //静态资源托管
-app.use(express.static('/static'));
+app.use(express.static(__dirname+'/static'));
 
 //设置监听端口
 app.listen(81, () => {

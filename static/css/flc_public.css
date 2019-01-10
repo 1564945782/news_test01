@@ -1,0 +1,76 @@
+/* 基本样式 */
+*{
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+ul li{
+	list-style: none;
+}
+button,[type="submit"],[type="button"]{
+	cursor: pointer;
+}
+.clear:after{
+	display: block;
+	content: "";
+	clear: both;
+}
+/* nav */
+#index-nav{
+	color: #fff;
+	height: 36px;
+	font: 400 15px/36px "微软雅黑";
+	background-color: #000;
+}
+#index-nav a{
+	color: #fff;
+}
+#index-nav a:hover{
+	text-decoration: none;
+}
+#index-nav li{
+	float: left;
+	padding: 0 10px;
+}
+#index-nav #nav-left{
+	float: left;
+}
+#index-nav #nav-left span{
+	padding: 0 5px;
+}
+#index-nav #nav-right{
+	float: right;
+}
+
+#index-wrap{
+	width: 1200px;
+	margin: 0 auto;
+	height: 620px;
+	background-color: skyblue;
+}
+#index-menu{
+	float: left;
+	width: 130px;
+	height: 100%;
+	background-color: #ccc;
+}
+#index-body{
+	float: left;
+	width: 660px;
+	height: 100%;
+	margin: 0 30px;
+	background-color: #bbb;
+}
+#index-others{
+	float: left;
+	width: 350px;
+	height: 100%;
+	background-color: #aaa;
+}
+
+
