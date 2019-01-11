@@ -7,15 +7,15 @@ global.mysql = require('mysql');
 global.app = express();
 
 //接受post过来的数据
-app.use(bodyParser.urlencoded({ extended: true }));
-
+app.use(bodyParser.urlencoded({ extended: true }));   //接收form-data
+app.use(bodyParser.json());  //接收json格式的数据
 //建立数据库连接
 global.mydb = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '123',
     port: 3306,
-    database: 'express_practice_3'
+    database: 'today_news'
 });
 mydb.connect();
 

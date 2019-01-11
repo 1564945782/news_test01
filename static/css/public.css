@@ -12,7 +12,7 @@ a:hover{
 ul li{
 	list-style: none;
 }
-button,[type="submit"],[type="button"]{
+button,[type="submit"],[type="button"],[class$='-btn'],[id$='-btn']{
 	cursor: pointer;
 }
 .clear:after{
@@ -52,7 +52,7 @@ button,[type="submit"],[type="button"]{
 	top: 36px;
 	left: 0;
 	z-index: 100;
-	background-color: #ccc;
+	background-color: #eee;
 }
 #nav-left #weather:hover ul{
 	display: block;
@@ -157,3 +157,58 @@ button,[type="submit"],[type="button"]{
 	height: 100%;
 	background-color: #bbb;
 }
+/* 广告样式 */
+.adv-box{
+	position: relative;
+	height: 290px;
+	width: 336px;
+	margin: 15px 0;
+	border: 2px solid orange;
+	overflow: hidden;
+}
+.adv-box ul{
+	float: right;
+	width: 46px;
+	height: 290px;
+	box-sizing: border-box;
+	border-left: 1px solid #ccc;
+}
+.adv-box ul li{
+	cursor: pointer;
+	height: 46px;
+	width: 46px;
+}
+.adv-box ul li:first-child,.adv-box ul li:last-child{
+	height: 30px;
+	text-align: center;
+}
+.adv-box ul button{
+	color: #999;
+	height: 100%;
+	width: 100%;
+	font-size: 20px;
+	border: 0;
+}
+.adv-box ul button:hover{
+	color: #333;
+}
+.adv-box ul .small-img{
+	height: 46px;
+	width: 46px;
+}
+.adv-box ul .big-img{
+	position: absolute;
+	display: none;
+	top: 0;
+	left: 0;
+	height: 290px;
+	width: 290px;
+}
+.adv-box ul li:hover .big-img{
+	display: block;
+}
+
+
+
+
+
