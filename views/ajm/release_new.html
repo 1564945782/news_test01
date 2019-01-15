@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/ajm.css">
+</head>
+<body>
+        <form action="/ajm/releasenews" method="POST" enctype="multipart/form-data" class="upform">
+            <!-- enctype="multipart/form-data" 不写这个混合提交属性就不会提交2次到服务器 -->
+            <label for="title">新闻标题</label>
+           
+            <input type="text" id="title" name="title" >
+            <br><br>
+        
+            <label for="newsimgfrom">新闻图片来源</label>
+            <button type="button" class="newsimgbtn">选择文件</button>
+            <input type="file" id="newsimgfrom" style="display:none" name="newsimgfrom">
+            <!-- name="newsimgfrom"  表单不写name属性的不提交 -->
+            <img src="" alt="" class="upnewsimg" >
+            <br><br>
+        
+            <label for="sourselogfrom" > 新闻来源商家log </label>
+            <button type="button" class="sourselogbtn">选择文件</button>
+            <input type="file" id="sourselogfrom" style="display:none" name="sourselogfrom">
+            <input type="text" class="forcheck" style="display:none"
+            value="">
+            <!-- name="sourselogfrom"  表单不写name属性的不提交  -->
+            <img src="" alt="" class="uplogoimg">
+            <br><br>     
+          
+            <label for="sourcefrom"> 新闻来源商家 </label>
+            <input type="text" id="sourcefrom" name="sourcefrom">
+            <br><br>
+            
+            <label for="pinglunnum">评论数 </label>
+            <input type="text" id="pinglunnum" name="pinglunnum">
+            <br><br>
+            
+            <label for="kind">类别</label>
+            <input type="text" id="kind" name="kind">
+            <br><br>
+            <button type="submit">提交</button><img src="/ajm/yanzheng" class="yanzhengimg"><input type="text" class="yanzhenginput"
+            name='yanzheng'>
+        </form>
+       
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="/js/ajm.js"></script>
+</body>
+</html>

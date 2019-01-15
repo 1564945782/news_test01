@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>_头条搜索</title>
+</head>
+<link rel="stylesheet" href="/css/ajm.css">
+
+<body class="s-body">
+    <!-- 刷新、回到顶部 -->
+        <ul class="tool">
+                <li class="tool-re-li"><img src="/img/a_toolrefresh.png" class="reimg"></li>
+                <li class="tool-top-li"><img src="/img/a_toolgotop.png" class="topimg"></li>
+            </ul>
+
+    <header class="top-header clear" id="h-head">
+        <ul class="s-h-leftul clear">
+            <li><a href="#">推荐</a></li>
+
+            <li> <a href="">热点</a></li>
+            <li> <a href="">视频</a></li>
+            <li> <a href="">图片</a></li>
+            <li> <a href="">娱乐</a></li>
+            <li> <a href="">科技</a></li>
+            <li> <a href="">汽车</a></li>
+            <li> <a href="">体育</a></li>
+            <li> <a href="">国际</a></li>
+            <li> <a href="">时尚</a></li>
+        </ul>
+        <ul class="t-h-rightul clear">
+            <li>
+                <div class="logincontainerdiv"><a href="#" id="loga"><span>登录</span></a></div>
+            </li>
+            <li><a href="#" class="s-right-link">反馈</a></li>
+            <li><a href="#" class="s-right-link">投诉侵权</a></li>
+            <li class="h-hid-right-containerli">
+                <a href="#" class="s-right-link">头条产品</a>
+                <div class="h-hid-right">
+                    <ul>
+                        <li><a href="#">问答</a></li>
+                        <li><a href="#">头条号</a></li>
+                        <li><a href="#">图虫</a></li>
+                        <li><a href="#">正版图库</a></li>
+                        <li><a href="#">广告投放</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <div class="s-container">
+        <div >
+        <form action="/ajm/search " class="clear" id="s-form">
+            <div class="s-searchinput-container clear">
+                <input type="text" class="s-searchinput" name="keywords">
+            </div>
+                <button type="submit" class="s-searchbtn">查询</button>
+        </form>
+    </div>
+        <ul class="newscontainer ">
+
+
+
+
+
+            <% for(let i=0;i<result.length;i++){%>
+            <% let title=result[i].title%>
+            <% let newsimgfrom =result[i].newsimgfrom%>
+            <% let sourseilogfrom=result[i].sourselogfrom%>
+            <% let soursefrom=result[i].sourcefrom%>
+            <% let pinglunnum=result[i].pinglunnum%>
+            <% if(newsimgfrom !=null){%>
+            <li clear class="news">
+                <div class="img-container">
+                    <a href="#" class="h-imgnewsfromimga"><img src=<%=newsimgfrom%> ></a>
+                </div>
+                <div class="contentothers">
+                    <span><a href="#" class="newstitle">
+                            <%= title%></a></span>
+                    <ul class="others-btm clear">
+                        <li>
+                            <div class="sourceimg-container ">
+                                <a href="#">
+                                    <img src=<%=sourseilogfrom%> >
+                                </a>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                                <%= soursefrom%></a></li>
+                        <li><a href="#">
+                                <%= pinglunnum%>评论</a></li>
+                        <li><a href="#">1小时前</a></li>
+                    </ul>
+                </div>
+            </li>
+            <% }else{%>
+            <li class="headnews clear">
+                <span class="hnews-title">
+                    <a href="#" class="newstitle">
+                        <%= title%></a>
+                </span>
+                <ul class="h-info clear">
+                    <li><a href="#"><img src=<%=sourseilogfrom%> ></a></li>
+                    <li><a href="#">
+                            <%= soursefrom%></a></li>
+                    <li><a href="#">
+                            <%= pinglunnum%>评论</a></li>
+                    <li><a href="#">1小时前</a></li>
+                </ul>
+            </li>
+            <% }%>
+            <%}%>
+        </ul>
+
+    </div>
+   
+</body>
+<script src="/js/ajm.js"></script>
+<!-- <script>
+let bt=document.querySelector('.s-searchbtn');
+let vau=document.querySelector('.s-searchinput').nodeValue;
+bt.onclick=()=>{
+    axios.get('/ajm/search', {
+        params: {
+          keywords: vau
+        }
+      })
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+}
+</script> -->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</html>

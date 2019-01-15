@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>今日头条</title>
+
+    <link rel="stylesheet" href="/css/ajm.css">
+</head>
+
+<body>
+    <!-- 刷新、回到顶部 -->
+    <ul class="tool">
+        <li class="tool-re-li"><img src="/img/a_toolrefresh.png" class="reimg"></li>
+        <li class="tool-top-li"><img src="/img/a_toolgotop.png" class="topimg"></li>
+    </ul>
+    <header class="top-header clear " id="h-head">
+        <ul class="t-h-leftul clear">
+            <li class="download"><a href="#">下载APP</a></li>
+            <li class="h-hid-left-containerli">
+                <span>北京</span> <span>晴</span> <span>-9°</span> <span> /</span> <span>4°</span><span>^</span>
+                <div class="h-hid-left">
+                        <img src="/img/a_weather.png" alt="">
+                   
+                </div>
+            </li>
+        </ul>
+        <ul class="t-h-rightul clear">
+            <li>
+                <div class="logincontainerdiv"><a href="#" id="loga"><span>登录</span></a></div>
+            </li>
+            <li><a href="#">反馈</a></li>
+            <li><a href="#">投诉侵权</a></li>
+            <li class="h-hid-right-containerli">
+                <a href="#">头条产品</a>
+                <div class="h-hid-right">
+                    <ul>
+                        <li><a href="#">问答</a></li>
+                        <li><a href="#">头条号</a></li>
+                        <li><a href="#">图虫</a></li>
+                        <li><a href="#">正版图库</a></li>
+                        <li><a href="#">广告投放</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href='/ajm/upload'>发布新闻</a></li>
+        </ul>
+    </header>
+    <!-- 内容区 -->
+    <div style="display:none" class="forcolor">
+        <%= wholi%>
+    </div>
+    <div class="ctcontainer clear">
+        <!-- 内容区左侧导航栏 -->
+
+        <ul class="leftnav">
+            <li> <a href=""><img src="/img/a_log.png" class="logimg"></a></li>
+            <li><a href="#">推荐</a></li>
+
+            <li><a href="#">阳光宽屏</a></li>
+
+            <li><a href="#">热点</a></li>
+            <!-- class="leftnavclick" -->
+            <li><a href="#">直播</a></li>
+            <li><a href="#">图片</a></li>
+            <li><a href="#">科技</a></li>
+            <li><a href="#">娱乐</a></li>
+            <li><a href="#">游戏</a></li>
+            <li><a href="#">体育</a></li>
+            <li><a href="#">汽车</a></li>
+            <li><a href="#">财经</a></li>
+            <li><a href="#">搞笑</a></li>
+            <li><a href="#">更多</a></li>
+        </ul>
+
+        <!-- 内容区中间内容 -->
+        <ul class="newscontainer ">
+
+
+            <% for(let i=0;i<result.length;i++){%>
+            <% let title=result[i].title%>
+            <% let newsimgfrom =result[i].newsimgfrom%>
+            <% let sourseilogfrom=result[i].sourselogfrom%>
+            <% let soursefrom=result[i].sourcefrom%>
+            <% let pinglunnum=result[i].pinglunnum%>
+            <% if(newsimgfrom !=null){%>
+            <li clear class="news">
+                <div class="img-container">
+                    <a href="#" class="h-imgnewsfromimga"><img src=<%=newsimgfrom%> ></a>
+                </div>
+                <div class="contentothers">
+                    <span><a href="#" class="newstitle">
+                            <%= title%></a></span>
+                    <ul class="others-btm clear">
+                        <li>
+                            <div class="sourceimg-container ">
+                                <a href="#">
+                                    <img src=<%=sourseilogfrom%> >
+                                </a>
+                            </div>
+                        </li>
+                        <li><a href="#">
+                                <%= soursefrom%></a></li>
+                        <li><a href="#">
+                                <%= pinglunnum%>评论</a></li>
+                        <li><a href="#">1小时前</a></li>
+                    </ul>
+                </div>
+            </li>
+            <% }else{%>
+            <li class="headnews clear">
+                <span class="hnews-title">
+                    <a href="#" class="newstitle">
+                        <%= title%></a>
+                </span>
+                <ul class="h-info clear">
+                    <li>
+                        <div class="sourceimg-container ">
+                            <a href="#"><img src=<%=sourseilogfrom%> ></a>
+                        </div>
+                    </li>
+                    <li><a href="#">
+                            <%= soursefrom%></a></li>
+                    <li><a href="#">
+                            <%= pinglunnum%>评论</a></li>
+                    <li><a href="#">1小时前</a></li>
+                </ul>
+            </li>
+            <% }%>
+            <%}%>
+
+        </ul>  
+
+        <!-- 内容区右侧内容 -->
+        <ul class="content-right">
+            <!-- 搜索框 -->
+            <li class="h-searchli">
+                <form action="/ajm/search " class="clear" method="GET" id="h-form">
+                    <div class="searchcontainer clear">
+                        <input type="text" placeholder="请输入关键字" class="searchinput" name="keywords">
+                    </div>
+                    <button type="submit" class="hot-searchbtn">搜索</button>
+                </form>
+            </li>
+            <!-- 轮播图 -->
+            <li class="h-lunbo">
+                <div class="lunbo">
+                    <div class="forhid">
+                        <ul class="h-lunboimg-container clear">
+                            <li class="h-lunboli">
+                                <a href="#" style="position:relative">
+                                    <img src="/img/a_lunboimg1.png" alt="">
+                                </a>
+                                <div class="motaichuang">
+                                    <a href="#">
+                                        <p class="h-p-title">国足3:0大胜菲律宾!</p>
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="h-lunboli">
+                                <a href="#" style="position:relative"><img src="/img/a_lunboimg2.png" alt=""> </a>
+                                <div class="motaichuang">
+                                    <a href="#">
+                                        <p class="h-p-title">国足3:0大胜菲律宾!国足3:0大胜菲律宾!国足3:0大胜菲律宾!</p>
+                                    </a>
+                                </div>
+
+                            </li>
+
+                            <li class="h-lunboli">
+                                <a href="#" style="position:relative"><img src="/img/a_lunboimg3.png" alt="">
+                                </a>
+                                <div class="motaichuang">
+                                    <a href="#">
+                                        <p class="h-p-title">国足3:0大胜菲律宾!</p>
+                                    </a>
+                                </div>
+                            </li>
+
+                            <li class="h-lunboli">
+                                <a href="#" style="position:relative"><img src="/img/a_lunboimg4.png" alt="">
+                                </a>
+                                <div class="motaichuang">
+                                    <a href="#">
+                                        <p class="h-p-title">国足3:0大胜菲律宾!</p>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <!-- //24小时新闻 -->
+            <li class="h-24news">
+                <h4>24小时新闻</h4>
+                <ul class="c-24news">
+                    <li class="c-24newsli clear">
+                        <img src="/img/a_24newsimg1.png" alt="">
+                        <div class=""><a href="">嫦娥四号完成人类首次月面生物实验 月面长出第一株嫩芽</a></div>
+                    </li>
+                    <li class="clear">
+                        <img src="/img/a_24newsimg1.png" alt="">
+                        <div><a href="">嫦娥四号完成人类首次月面生物实验 月面长出第一株嫩芽</a></div>
+                    </li>
+                    <li class="clear">
+                        <img src="/img/a_24newsimg1.png" alt="">
+                        <div><a href="">嫦娥四号完成人类首次月面生物实验 月面长出第一株嫩芽</a></div>
+                    </li>
+                    <li class="clear">
+                        <img src="/img/a_24newsimg1.png" alt="">
+                        <div><a href="">嫦娥四号完成人类首次月面生物实验 月面长出第一株嫩芽</a></div>
+                    </li>
+                </ul>
+            </li>
+            <!-- 广告 -->
+            <li class="h-adcontaniner-li">
+                <div class="h-adcontaniner">
+                    <img src="/img/a_ad1.png" alt="">
+                </div>
+            </li>
+
+            <!-- 友情链接 -->
+            <li class="linkli clear">
+                <p class="kindlink">友情链接</p>
+                <ul class="linkul clear">
+                    <li><a href="#">光明网</a></li>
+                    <li><a href="#">央广网</a></li>
+                    <li><a href="#">国际在线</a></li>
+                    <li><a href="#">中国西藏网</a></li>
+                    <li><a href="#">参考消息</a></li>
+                    <li><a href="#">环球网</a></li>
+                    <li><a href="#">中青在线</a></li>
+                    <li><a href="#">中青网</a></li>
+                    <li><a href="#">海外网</a></li>
+                    <li><a href="#">中国网</a></li>
+                    <li><a href="#">未来网</a></li>
+                    <li><a href="#">千龙网</a></li>
+                    <li><a href="#">新京报北青网</a></li>
+                    <li><a href="#">法制晚报</a></li>
+                    <li><a href="#">北京晨报</a></li>
+                    <li><a href="#">北京商报</a></li>
+                    <li><a href="#">北京娱乐</a></li>
+                    <li><a href="#">信报奥一网</a></li>
+                    <li><a href="#">金羊网</a></li>
+                    <li><a href="#">华商网</a></li>
+                    <li><a href="#">新民网</a></li>
+                    <li><a href="#">红网</a></li>
+                    <li><a href="#">中国江苏网</a></li>
+                    <li><a href="#">中国江西网</a></li>
+                    <li><a href="#">齐鲁网南海网</a></li>
+                    <li><a href="#">安徽网</a></li>
+                    <li><a href="#">河北新闻网</a></li>
+                    <li><a href="#">闽南网海峡网</a></li>
+                    <li><a href="#">华声在线</a></li>
+                    <li><a href="#">中国蓝TV</a></li>
+                </ul>
+            </li>
+            <li class="end clear">
+                    <p class="J-company-name"> © 2019 今日头条</p>
+                    <span>中国互联网举报中心</span>
+                    <span>京ICP证140141号</span>
+                    <span>京ICP备12025439号-3</span>
+                    <span>网络文化经营许可证</span>
+                    <span>京-非经营性-2016-0081</span>
+                    <span>互联网药品信息服务资格证书</span>
+                    <span>跟帖评论自律管理承诺书</span>
+                    <span>违法和不良信息举报：010-58341833</span>
+                    <span>公司名称：北京字节跳动科技有限公司</span>
+                    <span><img src="/img/a_police.png" class="police">京公网安备 11000002002023号</span>
+            </li>
+        </ul>
+
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/js/ajm.js"></script>
+</body>
+
+</html>
