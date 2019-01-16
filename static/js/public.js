@@ -12,11 +12,11 @@ document.onscroll=function(){
 		$$(".menu-box").style.cssText = "position:absolute;left:0;top:0;";
 	}
 	if(scrollTop>othersBoxHeight){
-		$$(".others-flow-box").style.display="none";
-		$$(".others-fixed-box").style.cssText="display:block;position:fixed;top:0;height:"+clientHeight+"px;overflow:hidden;";
+		$$(".others-flow-box") && ($$(".others-flow-box").style.display="none")
+		$$(".others-fixed-box") && ($$(".others-fixed-box").style.cssText="display:block;position:fixed;top:0;height:"+clientHeight+"px;overflow:hidden;")
 	}else{
-		$$(".others-flow-box").style.display="block";
-		$$(".others-fixed-box").style.cssText="display:none;";
+		$$(".others-flow-box") && ($$(".others-flow-box").style.display="block")
+		$$(".others-fixed-box") && ($$(".others-fixed-box").style.cssText="display:none;")
 	}
 }
 //menu中点击菜单项，相应的菜单背景颜色变为红色

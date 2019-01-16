@@ -6,11 +6,9 @@ window.onload=function(){
     queryCity();
 }
 
-
-
-
 // entertainment页面tab面板
 function tabChange_etm(){
+    var flag01=0;
 	console.log(666);
 	let etm_tab_list=document.querySelector('.etm_tab_list');
 	let tabChildrens=document.querySelectorAll('.tabChildrens');
@@ -56,10 +54,6 @@ function tabChange_etm(){
     }
 
 }
-
-
-
-
 // 聊天面板
 function createChat(){
 	let send_p=document.querySelector('.submit_send p');
@@ -79,19 +73,17 @@ function createChat(){
         }
     }
     function creatmsg(a){
-    let str = '<div class="btalk"><span class="bsay">' + a +'</span><i class="layui-icon layui-icon-triangle-r"></i><img src="/img/wl/etm/wl_server_notx.png" alt=""></div>';
-    talk_show.innerHTML +=str; 
-    let data={};
-    data.send=a;
-   msg_input.value='';
-   document.querySelector('.talk_show div:last-child span').style.right='24px';
-   document.querySelector('.talk_show div:last-child span').style.wordWrap='break-word';
-   document.querySelector('.talk_show div:last-child i').style.left='-25px';
-   document.querySelector('.talk_show div:last-child').scrollIntoView();
-    console.log(data);
-}
-
-
+        let str = '<div class="btalk"><span class="bsay">' + a +'</span><i class="layui-icon layui-icon-triangle-r"></i><img src="/img/wl/etm/wl_server_notx.png" alt=""></div>';
+        talk_show.innerHTML +=str; 
+        let data={};
+        data.send=a;
+       msg_input.value='';
+       document.querySelector('.talk_show div:last-child span').style.right='24px';
+       document.querySelector('.talk_show div:last-child span').style.wordWrap='break-word';
+       document.querySelector('.talk_show div:last-child i').style.left='-25px';
+       document.querySelector('.talk_show div:last-child').scrollIntoView();
+        console.log(data);
+    }
 }
 let dataurl;
 let city_url;
@@ -125,41 +117,32 @@ function weatherQuery(){
                     temperature.innerHTML=data_leg[0];
                     tp_name.innerHTML=data_wea[0];
                 }
+        }else{
+            for(let i=0;i<leg.length;i++){
+                data_leg.push(leg[i].value);
+                data_wea.push(leg[i].getAttribute("wea_d")); 
+            }
         }
-        else{
-
-                for(let i=0;i<leg.length;i++){
-                    data_leg.push(leg[i].value);
-                    data_wea.push(leg[i].getAttribute("wea_d")); 
-                }
-        
-
-
-
-    }
-})
+    })
     .catch(function (error) {
         console.log(error);
     });
 console.log(data_wea);
-        console.log(data_leg);
-        ul.onclick=function(ev){
-            var ev=ev||windows.event;
-            var target=ev.target||ev.srcElement;
-            if(target.nodeName.toLowerCase()=='span'){
-                let num=target.getAttribute("data-num0");
-                temperature.innerHTML=data_leg[num];
-                tp_name.innerHTML=data_wea[num];
-            }
+    console.log(data_leg);
+    ul.onclick=function(ev){
+        var ev=ev||windows.event;
+        var target=ev.target||ev.srcElement;
+        if(target.nodeName.toLowerCase()=='span'){
+            let num=target.getAttribute("data-num0");
+            temperature.innerHTML=data_leg[num];
+            tp_name.innerHTML=data_wea[num];
         }
-
-    
+    }
 }
 
 // 城市切换
 function queryCity(){
     let city_select=document.querySelector('.city_select');
-
     city_weather.onclick=function(){
         city_select.style.display='block';
     }
