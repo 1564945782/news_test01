@@ -1,0 +1,740 @@
+body{    
+	font-size: 16px;
+}
+@font-face{
+	font-family: 'mangguo';
+    src: url('/font/AaMangoBrother.ttf') format('truetype');
+}
+a{
+	color:#3e3c3c;
+}
+a:hover{
+	text-decoration: none;
+	color:#b5dcd5;
+}
+h2:hover{color: #bbb;}
+img:hover{
+    transform: scale(1.1);
+    opacity:0.5; 
+}
+.wrap {
+    
+    background-color: #fff;
+}
+.wrap div{
+    
+    background-color: #fff;
+}
+/*列表名称*/
+.list_name{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    color: #bbb;
+    font-family: mangguo;
+}
+.list_name span{
+    display: inline-block;
+    border: 4px solid #82d7ea;
+    margin: 21px;
+    margin-top: 24px;
+    border-radius: 50%;
+}
+/*搞笑新闻列表*/
+.funny_news{
+	margin-top:10px;
+}
+.cycle_news{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 1px solid #eae6e6;
+}
+.cycle_news .left_img{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cycle_news .left_img img{
+	width: 100%;
+    transition: all 0.5s ease-out 0.1s;
+}
+.cycle_news .right_content{
+	width: 60%;
+	padding-left: 30px;
+}
+.right_top_text02{
+	margin-top: 17px;
+    display: flex;
+}
+ .right_top_text02 img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #bbb;
+    margin-right: 10px;
+}
+ .right_top_text02 span{
+	font-family: 'mangguo';
+}
+
+.cycle_news .right_x{
+    background-color: #fff;
+    width: 10%;
+    font-size: 12px;
+}
+.cycle_news .right_x a{
+    display: inline-block;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #fff;
+}
+.cycle_news .right_x a:hover{
+    background-color: red;
+}
+.cycle_news .right_x span{
+    color: #fbfbfb;
+}
+/*新闻视频*/
+.news_video{    
+	/*height: 275px;*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.news_video .cycle_news{
+	height: 78%;
+}
+.news_video .cycle_news .left_img{
+	width: 50%;
+    /*background-color: #bbb;*/
+    height: 85%;
+    padding: 27px 0px;
+}
+.news_video .left_img .vjs-tech{
+	width: 100%;
+    height: 100%;
+}
+.news_video .cycle_news .right_content .right_top_text02 span{
+	    font-family: '微软雅黑';
+}
+.news_video .cycle_news .right_x a{
+    width: 120%;
+    margin-left: -11px;
+}
+/*风景列表*/
+.scenery_list{}
+
+
+.scenery_content{
+    height: 200px;
+    border-bottom: 1px solid #eae6e6;
+    margin-top: 10px;
+}
+.scenery_content div{
+	
+}
+.scenery_top{
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.scenery_center{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.scenery_center img{
+	width: 24%;
+    padding: 2px;
+}
+.scenery_bottom{
+	height: 20%;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+}
+.scenery_bottom div{
+	margin-top: 0px;
+}
+.scenery_bottom  .right_top_text02 span {
+    font-family: '微软雅黑';
+}
+/*底部加载*/
+.main_bottom{
+	height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bbb;
+}
+.main_bottom span{
+	display: inline-block;
+    height: 20px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 0px;
+}
+/*tab面板效果*/
+.others-box .taobao_recommended{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f5f6;
+    margin-top: 20px;
+}
+.taobao_recommended .recommended_content{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    background-color: #bbb;
+}
+.recommended_content .left{
+    width: 80%;
+    height: 100%;
+}
+.recommended_content .left .img_top{
+	height: 90%;
+}
+.recommended_content .left .img_top img{
+	width: 100%;
+    height: 100%;
+}
+.recommended_content .left .text_bottom{
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.recommended_content .left .text_bottom span{
+    color: #f40;
+}
+.recommended_content .left .text_bottom .old_price{
+    color: #6b6867;
+    text-decoration: line-through;
+    margin-left: 7px;
+}
+.recommended_content .right{
+	width: 21%;
+    height: 100%;
+}
+.recommended_content .right .right_top:hover{
+	background-color: #607d8b94;
+}
+.recommended_content .right .right_top{
+	height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dedbdb;
+}
+
+.recommended_content .right .right_top a{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+}
+.recommended_content .right .right_top .arrow_top{
+    background-image: url(/img/wl/funny/w_funny_arrow_1.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px 7px;
+}
+.recommended_content .right .right_top .arrow_bottom{
+	background-image: url(/img/wl/funny/w_funny_arrow_1.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px -7px;
+}
+.recommended_content .right .right_selects{
+    height: 80%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.recommended_content .right .right_selects ul{
+    width: 70%;
+    height: 100%;
+    position: relative;
+    top: 0px;
+}
+.recommended_content .right .right_selects li{
+    height: 20%;
+    margin-top: 1px;
+}
+.recommended_content .right .right_selects li:hover{
+	    border: 1px solid red;
+    padding: 1px;
+    z-index: 99999;
+}
+.recommended_content .right .right_selects img{
+	width: 100%;
+    height: 100%;
+}
+/*精彩图片*/
+.others-box .Wonderful_pictures{
+	width: 94%;
+    padding: 10px;
+    background-color: #f4f5f6;
+    margin-top: 20px;
+    border-top: 3px solid #2196F3;
+
+}
+.others-box .Wonderful_top{
+    line-height: 2;
+    background-color: #f4f5f6;
+}
+.Wonderful_content{
+	width: 100%;
+}
+.Wonderful_content .Wonderful_img{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #f4f5f6;
+}
+.img_content{
+	width: 48%;
+    margin-bottom: 7px;	
+}
+.img_content .left{}
+.img_content .right{}
+.img_content .img_content_top{
+	display: flex;
+    align-items: flex-end;
+}
+.img_content .img_content_top img{
+	width: 100%;
+    height: 100px;
+}
+.img_content span{
+	display: inline-block;
+    /* width: 50px !important; */
+    width: 29px;
+    height: 17px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 6px;
+    margin-left: -35px;
+    background-color: #bbb;
+}
+.img_content .img_content_bottom{
+	height: 46px;
+    width: 100%;
+    display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	background-color: #f4f5f6;
+}
+.img_content .img_content_bottom:hover{
+    color: #607D8B;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    height: auto;
+}
+/*友情链接*/
+
+.a_link{}
+.pane-module{}
+.module-head{}
+.friend-links-content{
+	display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.item{
+	width: 23%;
+    height: 20px;
+    text-align: center;
+    /* background-color: red; */
+    padding: 2px;
+    overflow: hidden;
+    margin: 5px 0;
+}
+
+/*今日头条公司信息*/
+.tody_news_info{
+	background-color: #f4f5f6;
+}
+.tody_news_info .company{
+    background-color: #f4f5f6;
+    line-height: 2;
+}
+.company .a{
+ 	background-color: #f4f5f6;
+ }
+
+ /*entertainment页面tab面板*/
+ .etm_tab_list{}
+ .etm_tab_list ul{
+ 	position: relative;
+ }
+ 
+ .etm_tab_list li{
+    position: absolute;
+ }
+ /*.etm_tab_list li div{display: inline-block;}*/
+ .etm_tab_list a{
+     display: inline-flex;
+     position: relative;
+ }
+.etm_tab_list .a_tab1{    
+  	
+    left: 0px;
+}
+  .etm_tab_list .a_tab2{
+  	
+    left: 52px;
+  }
+  .etm_tab_list .a_tab3{
+    left: 104px;
+  }
+  .etm_tab_list .a_tab4{
+    left: 156px;
+  }
+  .etm_tab_list .a_tab5{
+    left: 208px;
+  }
+.etm_tab_list .tab1{
+    background-color: #efefef;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    position: relative;
+}
+.etm_tab_list .tab1_children{}
+.etm_tab_list .tab2_children{
+	display: none;
+	margin-left: -52px;
+}
+.etm_tab_list .tab3_children{
+	display: none;
+	margin-left: -104px;
+}
+.etm_tab_list .tab4_children{
+	display: none;
+	margin-left: -156px;
+}
+.etm_tab_list .tab5_children{
+	display: none;
+	margin-left: -156px;
+}
+
+.tab1_children .cycle_news{}
+
+
+/*聊天面板*/
+.content{
+    height: 300px;
+    overflow: hidden;
+}
+
+.talk_show{
+    width: 104%;
+    padding-top: 5px;
+    height: 300px;
+    overflow: scroll;
+}
+.talk_show img{
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #bbb;
+    border-radius: 50%;
+}
+.talk_show .atalk{
+	margin:0.5rem; 
+	display: flex;
+}
+.talk_show .atalk .right00{ 
+    display: inline-block;
+    position: relative;
+    height: 0px;
+    width: 0px;
+    border-top: 2px solid transparent;
+    border-right: 11px solid #0181cc;
+    border-bottom: 10px solid transparent;
+    margin-left: 10px;
+    margin-top: 6px;
+}
+.talk_show .atalk .asay{
+    display: inline-block;
+    background: #0181cc;
+    border-radius: 0.1rem;
+    color: #fff;
+    max-width: 145px;
+    text-align: left;
+   padding: 2px 11px;
+}
+.talk_show .btalk{
+	margin:0.5rem;
+    text-align:right;
+	background-color: #fff;
+}
+
+.talk_show .btalk .bsay{
+    display: inline-block;
+    background: #ef8201;
+    display: inline-block;
+    border-radius: 0.1rem;
+    color: #fff;
+    max-width: 145px;
+    text-align: left;
+    padding: 2px 11px;
+    position: relative;
+    right: 14px;
+}
+.talk_show .btalk .bsay i{}
+.talk_show .btalk i{
+    display: inline-block;
+    position: relative;
+    height: 0px;
+    width: 0px;
+    border-top: 8px solid transparent;
+    border-left: 11px solid #ef8201;
+    border-bottom: 4px solid transparent;
+    position: relative;
+    left: -20px;
+    top: -2px;
+}
+.talk_show .btalk img{
+    margin-left: -1rem;
+}
+
+/* 底部评论区 */
+
+.footer02 {
+    position: relative;
+    top: -17px;
+}
+
+.footer02 .comment02 {
+    width: 100%;
+    border-top: 0.01rem solid rgb(223, 222, 222);
+    background-color: #eae5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+
+}
+.footer02 .comment02 div{
+   font-size: 14px;
+   text-align: center;
+   line-height: 0.9rem;
+}
+.footer02 .comment02 .yuyin_send{
+    width: 10%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eae5e5;
+}
+.footer02 .comment02 .yuyin_send i{
+    display: inline-block;
+    width: 76%;
+    height: 100%;
+    background-image: url(/img/wl/etm/wl_yuyin_01.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.footer02 .comment02 .content_send{
+    width: 70%;
+    background-color: #b95959;
+}
+.footer02 .comment02 .content_send input{
+    height: 33px;
+    width: 100%;
+    outline: none;
+    border: 0rem;
+    color: #2d2a2a;
+    background-color: #fff;
+    padding-left: 17px;
+}
+.footer02 .comment02 .submit_send{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+}
+.footer02 .comment02 .submit_send p{
+    height: 33px;
+    width: 100%;
+    text-align: center;
+    line-height: 33px;
+    background-color: #d0c9c9;
+}
+.footer02 .comment02 .motions_send{
+	width: 10%;
+}
+.footer02 .comment02 .motions_send a{
+    display: inline-block;
+    width: 76%;
+    height: 100%;
+}
+.footer02 .comment02 .motions_send i{
+	background-image: url(/img/wl/etm/wl_smile_01.jpg);
+}
+
+
+/*天气预报*/
+.taobao_recommended .container{
+    width: 100%;
+}
+#txt-pub-time{
+    /*width: 100%;*/
+    height: 40px;
+    background-color: #93b2fa73;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    font-size: 19px;
+}
+#txt-pub-time p{}
+#city_weather{}
+#city_weather:hover{
+    color: yellow;
+}
+.city_select{    
+    position: absolute;
+    display: none;
+}
+.city_select ul{}
+.city_select li{
+        width: 98px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    font-size: 19px;
+    background-color: #cedcfd;
+    margin-top: 1px;
+}
+.city_select li:hover{
+    color: yellow;
+}
+#ct-main{
+        width: 100%;
+    height: 100px;
+    background-color: #6592f7;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#txt-temperature{
+        /* width: 30%; */
+    font-family: mangguo;
+    font-size: 23px;
+    text-align: center;
+    color: yellow;
+    /* padding-left: 10px; */
+    text-align: center;
+    height: 34%;
+    line-height: 34px;
+    background-color: #6592f7;
+}
+#txt-name{
+    width: 28%;
+    text-align: center;
+}
+#ct-aqi{
+    width: 23%;
+    display: flex;
+    align-items: center;
+
+     border-radius: 12px;
+    justify-content: space-evenly;
+}
+#ct-aqi div{
+        width: 24%;
+    background-color: white;
+    height: 20px;
+    background-image: url(/img/wl/etm/wl_weather_02.png);
+    border-radius: 12px;
+    background-position: -216px -21px;
+}
+#air-level1{
+    height: 100px;
+    width: 36%;
+        background-color: #6592f7;
+}
+#air-level1 img{
+        width: 77%;
+    height: 77%;
+}
+#air-level1 div{
+        background-color: #6592f7;
+    height: 66%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+#air-level1 p{}
+.info-aqi{
+        text-align: left;
+    font-size: 15px;
+}
+#ct-tips{
+        height: 70px;
+    background-color: #6592f7;
+}
+#ct-tips p{
+    line-height: 30px;
+    text-align: center;
+    font-family: mangguo;
+    font-size: 20px;
+        padding-top: 10px;
+}
+#btn-tip-switch{}
+#ct-tips a{
+    display: inline-block;
+    width: 8%;
+    height: 20px;
+    float: right;
+    margin-right: 20px;x
+    background-image: url(/img/wl/etm/wl_weather_02.png);
+    background-position: -121px -191px;
+}
+#txt-tips{}
+#ct-current-weather{
+    height: 59px;
+    background-color: #6592f754;
+    display: flex;  
+    align-items: center;
+    justify-content: center; 
+}
+#ct-current-weather img{}
+#ct-current-weather ul {
+        display: flex;
+}
+#ct-current-weather li{
+    height: 51px;
+    margin: 1px;
+    /* width: 20%; */
+    font-size: 15px;
+    text-align: center;
+    background-color: #93b2fa73;
+    padding-top: 5px;
+}
+#ct-current-weather li:hover{
+    color: #f3f3f3
+}
+#ct-current-weather span{
+        display: inline-block;
+    width: 96%;
+    font-size: 14px;
+    /*padding: 3px;*/
+}
+
+
+
