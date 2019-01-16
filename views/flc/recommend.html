@@ -1,5 +1,14 @@
 <!-- recommend.html -->
-<% include ../module/header.html%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>今日头条首页</title>
+		<link rel="stylesheet" href="/css/public.css" />
+		<link rel="stylesheet" href="/css/flc.css" />
+	</head>
+	<body>
+		<% include ../module/header.html%>
 		<div class="wrap clear">
 			<% include ../module/menuer.html%>
 			<div class="main-box">
@@ -13,7 +22,7 @@
 						<li><a href="#"><img src="/img/f_turns_img_6.jpg" /></a><span>这些明星的逸闻趣事，你知道吗？</span></li>
 					</ul>
 					<ul id="f-turns-txt">
-						<li data-num='0'>要闻</li>
+						<li data-num='0' class="turns-txt-active-li">要闻</li>
 						<li data-num='1'>社会</li>
 						<li data-num='2'>娱乐</li>
 						<li data-num='3'>体育</li>
@@ -25,236 +34,42 @@
 					<button type="button" class="look-btn">您有未读新闻，点击查看</button>
 					<button type="button" class="close-btn">×</button>
 				</div>
-				<ul class="f-news-part">
-					<li class="only-text-li">
-						<div class="head-line">习近平同金正恩会谈达成这些重要共识</div>
-						<div class="bottom-label">
-							<button type="button" class="type">时政</button>
-							<button type="button" class="author bottom-same">新华网</button>
-							<button type="button" class="comment bottom-same">112评论</button>
-							<span class="time bottom-same">1小时前</span>
-						</div>
-						<div class="close-btn-box">
-							<button class="close-btn" type="button">×</button>
-							<span>不感兴趣</span>
-						</div>
-					</li>
-					<li class="has-video-li">
-						<video>这里是是放视频的地方</video>
-						<div class="right-box">
-							<div class="head-line">电视专题片《红色通缉》第一集《引领》揭秘三名红通人员如何归案？</div>
-							<div class="bottom-label">
-								<button type="button" class="type">时政</button>
-								<button type="button" class="author bottom-same">央视新闻移动网</button>
-								<button type="button" class="comment bottom-same">1.4万次播放</button>
-								<span class="time bottom-same">1分钟前</span>
-							</div>
-						</div>
-						<div class="close-btn-box">
-							<button class="close-btn" type="button">×</button>
-							<span>不感兴趣</span>
-						</div>
-					</li>
-					<li class="multi-imgs-li">
-						<div class="head-line">农村83岁老人照顾45岁女儿16年，隔空喊话女婿：回来你别跑</div>
-						<div class="imgs-box">
-							<a href="#"><img src="/img/f_multi_img_1.jpg" /></a>
-							<a href="#"><img src="/img/f_multi_img_2.jpg" /></a>
-							<a href="#"><img src="/img/f_multi_img_3.jpg" /></a>
-							<a href="#"><img src="/img/f_multi_img_4.jpg" /></a>
-						</div>
-						<div class="bottom-label">
-							<button type="button" class="type">社会</button>
-							<button type="button" class="author bottom-same">黄土地纪实摄影</button>
-							<button type="button" class="comment bottom-same">818评论</button>
-							<span class="time bottom-same">3小时前</span>
-						</div>
-						<div class="close-btn-box">
-							<button class="close-btn" type="button">×</button>
-							<span>不感兴趣</span>
-						</div>
-					</li>
-					<li class="single-img-li">
-						<img src="/img/f_multi_img_1.jpg" />
-						<div class="right-box">
-							<div class="head-line">要延年益寿，协和医院院长建议中老年：坚守八大防线</div>
-							<div class="bottom-label">
-								<button type="button" class="type">健康</button>
-								<button type="button" class="author bottom-same">文汇网</button>
-								<button type="button" class="comment bottom-same">131评论</button>
-								<span class="time bottom-same">24分钟前</span>
-							</div>
-						</div>
-						<div class="close-btn-box">
-							<button class="close-btn" type="button">×</button>
-							<span>不感兴趣</span>
-						</div>
-					</li>
-					<li class="single-img-li">
-						<img src="/img/f_multi_img_1.jpg" />
-						<div class="right-box">
-							<div class="head-line">要延年益寿，协和医院院长建议中老年：坚守八大防线</div>
-							<div class="bottom-label">
-								<button type="button" class="type">健康</button>
-								<button type="button" class="author bottom-same">文汇网</button>
-								<button type="button" class="comment bottom-same">131评论</button>
-								<span class="time bottom-same">24分钟前</span>
-							</div>
-						</div>
-						<div class="close-btn-box">
-							<button class="close-btn" type="button">×</button>
-							<span>不感兴趣</span>
-						</div>
-					</li>
-					<li class="single-img-li">
-						<img src="/img/f_multi_img_1.jpg" />
-						<div class="right-box">
-							<div class="head-line">要延年益寿，协和医院院长建议中老年：坚守八大防线</div>
-							<div class="bottom-label">
-								<button type="button" class="type">健康</button>
-								<button type="button" class="author bottom-same">文汇网</button>
-								<button type="button" class="comment bottom-same">131评论</button>
-								<span class="time bottom-same">24分钟前</span>
-							</div>
-						</div>
-						<div class="close-btn-box">
-							<button class="close-btn" type="button">×</button>
-							<span>不感兴趣</span>
-						</div>
-					</li>
-					<li class="single-img-li">
-						<img src="/img/f_multi_img_1.jpg" />
-						<div class="right-box">
-							<div class="head-line">要延年益寿，协和医院院长建议中老年：坚守八大防线</div>
-							<div class="bottom-label">
-								<button type="button" class="type">健康</button>
-								<button type="button" class="author bottom-same">文汇网</button>
-								<button type="button" class="comment bottom-same">131评论</button>
-								<span class="time bottom-same">24分钟前</span>
-							</div>
-						</div>
-						<div class="close-btn-box">
-							<button class="close-btn" type="button">×</button>
-							<span>不感兴趣</span>
-						</div>
-					</li>
-					<li class="single-img-li">
-						<img src="/img/f_multi_img_1.jpg" />
-						<div class="right-box">
-							<div class="head-line">要延年益寿，协和医院院长建议中老年：坚守八大防线</div>
-							<div class="bottom-label">
-								<button type="button" class="type">健康</button>
-								<button type="button" class="author bottom-same">文汇网</button>
-								<button type="button" class="comment bottom-same">131评论</button>
-								<span class="time bottom-same">24分钟前</span>
-							</div>
-						</div>
-						<div class="close-btn-box">
-							<button class="close-btn" type="button">×</button>
-							<span>不感兴趣</span>
-						</div>
-					</li>
-				</ul>
+				<% include ../module/f_news_part.html%>
 			</div>
 			<div class="others-box">
-				<form id="f-search" action="">
-					<input type="search" name="search" placeholder="请输入你想搜索的内容" />
-					<input type="submit" value="搜索" />
-				</form>
-				<div id="f-login">
-					<div id="not-login">
-						<p>登录后可以保存您的浏览喜好、评论、收藏，并与APP同步更可以发布微头条</p>
-						<button type="button" id="f-login-btn">登录</button>
-						<ul>
-							<li><img src="/img/f_login_icon_1.jpg" /><span>QQ</span></li>
-							<li><img src="/img/f_login_icon_2.jpg" /><span>微信</span></li>
-						</ul>
-						<p>还没有账号？马上去<a class="go-regist-btn">注册</a></p>
+				<div class="others-flow-box">
+					<form id="f-search" action="">
+						<input type="search" name="search" placeholder="请输入你想搜索的内容" />
+						<input type="submit" value="搜索" />
+					</form>
+					<div id="f-login">
+						<div id="not-login">
+							<p>登录后可以保存您的浏览喜好、评论、收藏，并与APP同步更可以发布微头条</p>
+							<button type="button" id="f-login-btn">登录</button>
+							<ul>
+								<li><img src="/img/f_login_icon_1.jpg" /><span>QQ</span></li>
+								<li><img src="/img/f_login_icon_2.jpg" /><span>微信</span></li>
+							</ul>
+							<p>还没有账号？马上去<a class="go-regist-btn">注册</a></p>
+						</div>
+						<div id="has-login">
+							<p><button type="button" id="out-login-btn">退出登录</button></p>
+							<img id="head-img" src="/img/f_user_touxiang.jpg" />
+							<div id="user-name">别样的感动</div>
+							<ul>
+								<li><b>关注</b><span>8</span></li>
+								<li><b>粉丝</b><span>2</span></li>
+							</ul>
+						</div>
 					</div>
-					<div id="has-login">
-						<p><button type="button" id="out-login-btn">退出登录</button></p>
-						<img id="head-img" src="/img/f_user_touxiang.jpg" />
-						<div id="user-name">别样的感动</div>
-						<ul>
-							<li><b>关注</b><span>8</span></li>
-							<li><b>粉丝</b><span>2</span></li>
-						</ul>
-					</div>
+					<% include ../module/adver.html%>
+					<% include ../module/hot_news_24.html%>
+					<% include ../module/good_img.html%>
+					<% include ../module/about_more.html%>
 				</div>
-				<div class="f-adv-cloths">
-					衣服广告
-				</div>
-				<% include ../module/adver.html%>
-				<div id="f-hot-news">
-					<h3><b>24小时热闻</b></h3>
-					<ul>
-						<li class="clear">
-							<img src="/img/f_hot_news_1.jpg" />
-							<p><a href="#">所有新建风电、光伏发电项目都不再享受国家补贴了？国家能源局解读</a></p>
-						</li>
-						<li class="clear">
-							<img src="/img/f_hot_news_2.jpg" />
-							<p><a href="#">当兵名额有限，他浪费了一个名额</a></p>
-						</li>
-						<li class="clear">
-							<img src="/img/f_hot_news_3.jpg" />
-							<p><a href="#">河南男子杀死妻弟家三口人被通缉 曾驾车撞死两人入狱</a></p>
-						</li>
-						<li class="clear">
-							<img src="/img/f_hot_news_4.jpg" />
-							<p><a href="#">苗圩：今年部分地区将发放5G临时牌照，下半年用上5G手机</a></p>
-						</li>
-					</ul>
-				</div>
-				<div class="f-adv-cloths">
-					衣服广告
-				</div>
-				<div id="f-hot-imgs">
-					<h3><b>精彩图片</b></h3>
-					<ul class="clear">
-						<li class="clear">
-							<img src="/img/f_jingcai_img_1.jpg" >
-							<a href="#">曾被称为“到了五道梁，哭爹又叫</a>
-						</li>
-						<li class="clear">
-							<img src="/img/f_jingcai_img_2.jpg" >
-							<a href="#">曾被称为“到了五道梁，哭爹又叫</a>
-						</li>
-						<li class="clear">
-							<img src="/img/f_jingcai_img_3.jpg" >
-							<a href="#">曾被称为“到了五道梁，哭爹又叫</a>
-						</li>
-						<li class="clear">
-							<img src="/img/f_jingcai_img_4.jpg" >
-							<a href="#">曾被称为“到了五道梁，哭爹又叫</a>
-						</li>
-						<li class="clear">
-							<img src="/img/f_jingcai_img_5.jpg" >
-							<a href="#">曾被称为“到了五道梁，哭爹又叫</a>
-						</li>
-						<li class="clear">
-							<img src="/img/f_jingcai_img_6.jpg" >
-							<a href="#">曾被称为“到了五道梁，哭爹又叫</a>
-						</li>
-					</ul>
-				</div>
-				<div id="f-about-more">
-					<h3><b>更多</b></h3>
-					<ul class="clear">
-						<li><a href="#">关于头条</a></li>
-						<li><a href="#">加入头条</a></li>
-						<li><a href="#">媒体报道</a></li>
-						<li><a href="#">媒体合作</a></li>
-						<li><a href="#">产品合作</a></li>
-						<li><a href="#">合作说明</a></li>
-						<li><a href="#">广告投放</a></li>
-						<li><a href="#">联系我们</a></li>
-						<li><a href="#">用户协议</a></li>
-						<li><a href="#">隐私政策</a></li>
-						<li><a href="#">侵权投诉</a></li>
-						<li><a href="#">廉洁举报</a></li>
-						<li><a href="#">企业认证</a></li>
-					</ul>
+				<div class="others-fixed-box">
+					<% include ../module/hotest_news.html%>
+					<% include ../module/adver.html%>
 				</div>
 			</div>
 		</div>
@@ -265,8 +80,8 @@
 					<label><b>账号：</b><input type="text" name="number" placeholder="头条账号" /></label>
 					<label><b>密码：</b><input type="password" name="pwd" placeholder="头条密码" /></label>
 					<label id="input-code-label">
-						<input type="text" name="code" placeholder="输入验证码" />
-						<input type="button" value="获取验证码" />
+						<input type="text" name="code" placeholder="请输入验证码" />
+						<img id="code" src="/flc/code" />
 					</label>
 					<p>登录即表示你同意 <a href="#">用户协议</a> 和 <a href="#">隐私条款</a><a href="#">忘记密码</a></p>
 					<button type="button" id="login-btn">登录</button>
@@ -277,9 +92,9 @@
 			<form id='regist-form'>
 				<fieldset id="regist-fieldset">
 					<legend>注册</legend>
-					<label><b>昵称：</b><input type="text" name="nickname" placeholder="账号昵称" /></label>
-					<label><b>密码：</b><input type="password" name="pwd" placeholder="头条密码" /></label>
-					<label><b>手机：</b><input type="text" name="tel" placeholder="手机号码" /></label>
+					<label><b>昵称：</b><input type="text" name="nickname" placeholder="账号昵称" required="required"/></label>
+					<label><b>密码：</b><input type="password" name="pwd" placeholder="头条密码" required="required"/></label>
+					<label><b>手机：</b><input type="text" name="tel" placeholder="手机号码" required="required"/></label>
 					<p>注册即表示你同意 <a href="#">用户协议</a> 和 <a href="#">隐私条款</a></p>
 					<button type="button" id="regist-btn">注册</button>
 					<p>已有账号？马上去<a class="go-login-btn">登录</a></p>
@@ -288,6 +103,7 @@
 			</form>
 		</div>
 		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script src="/js/public.js"></script>
 		<script src="/js/flc.js"></script>
 	</body>
 </html>

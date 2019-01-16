@@ -1,0 +1,63 @@
+<!-- publish.html -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>头条发布</title>
+		<link rel="stylesheet" href="/css/public.css" />
+		<link rel="stylesheet" href="/css/flc.css" />
+	</head>
+	<body>
+		<% include ../module/header.html%>
+		<div class="wrap clear">
+			<% include ../module/menuer.html%>
+			<div class="main-box">
+				<div class="publish-box">
+					<div class="publish-top clear">
+						<ul class="clear" id="publish-type">
+							<li class="publish-top-active">发布问答</li>
+							<li>发布图文</li>
+							<li>发布视频</li>
+						</ul>
+						<ul id="add-file">
+							<li>添加图片</li>
+							<li>添加表情</li>
+							<li>添加视频</li>
+						</ul>
+					</div>
+					<div class="publish-middle">
+						<div id="question-answer">
+							<b>问题：</b><br />
+							<textarea placeholder="请输入你想咨询的问题,让大家来回答吧……"></textarea>
+						</div>
+						<div id="img-text">
+							<div class="publish-headline">
+								<b>标题：</b><input type="text" placeholder="这里输入图文标题……" />
+							</div>
+							<textarea placeholder="这里输入图文内容……"></textarea>
+						</div>
+						<div id="has-video">
+							<div class="publish-headline">
+								<b>标题：</b><input type="text" placeholder="这里输入视频标题……" />
+							</div>
+							<textarea placeholder="这里添加视频文件……"></textarea>
+						</div>
+					</div>
+					<div class="publish-bottom">
+						<button type="button" id="publish-btn">发布</button>
+					</div>
+				</div>
+			</div>
+			<div class="others-box">
+				<div class="others-flow-box">
+					<% include ../module/adver.html%>
+					<% include ../module/hot_news_24.html%>
+				</div>
+				<div class="others-fixed-box">
+				</div>
+			</div>
+		</div>
+		<script src="/js/public.js"></script>
+		<script src="/js/flc_publish.js"></script>
+	</body>
+</html>

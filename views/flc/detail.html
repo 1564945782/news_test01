@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title><%= title%></title>
+		<link rel="stylesheet" href="/css/public.css" />
+	</head>
+	<body>
+		<% include ../module/header.html%>
+		<div class="wrap clear">
+			<% include ../module/detail_menu.html%>
+			<div class="main-box">
+				这里是空的
+			</div>
+			<div class="others-box">
+				<div class="others-flow-box">
+					<% include ../module/hotest_news.html%>
+					<% include ../module/about_more.html%>
+					<% include ../module/friends_link.html%>
+				</div>
+				<div class="others-fixed-box">
+					<% include ../module/adver.html%>
+					<% include ../module/hot_news_24.html%>
+				</div>
+			</div>
+		</div>
+		<script src="/js/public.js"></script>
+	</body>
+</html>

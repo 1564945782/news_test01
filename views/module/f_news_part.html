@@ -1,0 +1,327 @@
+<ul class="f-news-part">
+	<li class="only-text-li">
+		<div class="head-line"><a href="/flc/detail?type=only_text&num=1"><%= text[0].headline%></a></div>
+		<div class="bottom-label">
+			<button type="button" class="type"><%= text[0].type%></button>
+			<button type="button" class="author bottom-same"><%= text[0].author%></button>
+			<button type="button" class="comment bottom-same"><%= text[0].comment%></button>
+			<span class="time bottom-same"><%= text[0].time%></span>
+		</div>
+		<div class="close-btn-box">
+			<button class="close-btn" type="button">×</button>
+			<span>不感兴趣</span>
+		</div>
+	</li>
+	<li class="has-video-li">
+		<video controls="controls">
+			<source src="<%= video[0].video_src%>"  type="video/mp4">
+			您的浏览器不支持 HTML5 video 标签。
+		</video>
+		<div class="right-box">
+			<div class="head-line">
+				<a href="/flc/detail?type=has_video&num=1"><%= video[0].headline%></a>
+			</div>
+			<div class="bottom-label">
+				<button type="button" class="type"><%= video[0].type%></button>
+				<button type="button" class="author bottom-same"><%= video[0].author%></button>
+				<button type="button" class="play bottom-same"><%= video[0].play%></button>
+				<span class="time bottom-same"><%= video[0].time%></span>
+			</div>
+		</div>
+		<div class="close-btn-box">
+			<button class="close-btn" type="button">×</button>
+			<span>不感兴趣</span>
+		</div>
+	</li>
+	<li class="multi-imgs-li">
+		<div class="head-line">
+			<a href="/flc/detail?type=multi_img&num=1"><%= imgs[0].headline%></a>
+		</div>
+		<div class="imgs-box">
+			<% var srcObj=JSON.parse(imgs[0].imgs_src);%>
+			<% var arr=[];%>
+			<% for(key in srcObj){%>
+			<% arr.push(srcObj[key])%>
+			<%}%>
+			<% for(var i=0;i<4;i++){%>
+			<a href="#"><img src="<%= arr[i]%>"/></a>
+			<%}%>
+		</div>
+		<div class="bottom-label">
+			<button type="button" class="type"><%= imgs[0].type%></button>
+			<button type="button" class="author bottom-same"><%= imgs[0].author%></button>
+			<button type="button" class="comment bottom-same"><%= imgs[0].comment%></button>
+			<span class="time bottom-same"><%= imgs[0].time%></span>
+		</div>
+		<div class="close-btn-box">
+			<button class="close-btn" type="button">×</button>
+			<span>不感兴趣</span>
+		</div>
+	</li>
+	<li class="single-img-li">
+		<img src="<%= JSON.parse(imgs[1].imgs_src).src_1%>" />
+		<div class="right-box">
+			<div class="head-line">
+				<a href="/flc/detail?type=single_img&num=1"><%= imgs[1].headline%></a>
+			</div>
+			<div class="bottom-label">
+				<button type="button" class="type"><%= imgs[1].type%></button>
+				<button type="button" class="author bottom-same"><%= imgs[1].author%></button>
+				<button type="button" class="comment bottom-same"><%= imgs[1].comment%></button>
+				<span class="time bottom-same"><%= imgs[1].time%></span>
+			</div>
+		</div>
+		<div class="close-btn-box">
+			<button class="close-btn" type="button">×</button>
+			<span>不感兴趣</span>
+		</div>
+	</li>
+	<li class="single-img-li">
+		<img src="<%= JSON.parse(imgs[1].imgs_src).src_1%>" />
+		<div class="right-box">
+			<div class="head-line">
+				<a href="/flc/detail?type=single_img&num=1"><%= imgs[1].headline%></a>
+			</div>
+			<div class="bottom-label">
+				<button type="button" class="type"><%= imgs[1].type%></button>
+				<button type="button" class="author bottom-same"><%= imgs[1].author%></button>
+				<button type="button" class="comment bottom-same"><%= imgs[1].comment%></button>
+				<span class="time bottom-same"><%= imgs[1].time%></span>
+			</div>
+		</div>
+		<div class="close-btn-box">
+			<button class="close-btn" type="button">×</button>
+			<span>不感兴趣</span>
+		</div>
+	</li>
+	<li class="single-img-li">
+		<img src="<%= JSON.parse(imgs[1].imgs_src).src_1%>" />
+		<div class="right-box">
+			<div class="head-line">
+				<a href="/flc/detail?type=single_img&num=1"><%= imgs[1].headline%></a>
+			</div>
+			<div class="bottom-label">
+				<button type="button" class="type"><%= imgs[1].type%></button>
+				<button type="button" class="author bottom-same"><%= imgs[1].author%></button>
+				<button type="button" class="comment bottom-same"><%= imgs[1].comment%></button>
+				<span class="time bottom-same"><%= imgs[1].time%></span>
+			</div>
+		</div>
+		<div class="close-btn-box">
+			<button class="close-btn" type="button">×</button>
+			<span>不感兴趣</span>
+		</div>
+	</li>
+	<li class="single-img-li">
+		<img src="<%= JSON.parse(imgs[1].imgs_src).src_1%>" />
+		<div class="right-box">
+			<div class="head-line">
+				<a href="/flc/detail?type=single_img&num=1"><%= imgs[1].headline%></a>
+			</div>
+			<div class="bottom-label">
+				<button type="button" class="type"><%= imgs[1].type%></button>
+				<button type="button" class="author bottom-same"><%= imgs[1].author%></button>
+				<button type="button" class="comment bottom-same"><%= imgs[1].comment%></button>
+				<span class="time bottom-same"><%= imgs[1].time%></span>
+			</div>
+		</div>
+		<div class="close-btn-box">
+			<button class="close-btn" type="button">×</button>
+			<span>不感兴趣</span>
+		</div>
+	</li>
+	<li class="single-img-li">
+		<img src="<%= JSON.parse(imgs[1].imgs_src).src_1%>" />
+		<div class="right-box">
+			<div class="head-line">
+				<a href="/flc/detail?type=single_img&num=1"><%= imgs[1].headline%></a>
+			</div>
+			<div class="bottom-label">
+				<button type="button" class="type"><%= imgs[1].type%></button>
+				<button type="button" class="author bottom-same"><%= imgs[1].author%></button>
+				<button type="button" class="comment bottom-same"><%= imgs[1].comment%></button>
+				<span class="time bottom-same"><%= imgs[1].time%></span>
+			</div>
+		</div>
+		<div class="close-btn-box">
+			<button class="close-btn" type="button">×</button>
+			<span>不感兴趣</span>
+		</div>
+	</li>
+	<li class="single-img-li">
+		<img src="<%= JSON.parse(imgs[1].imgs_src).src_1%>" />
+		<div class="right-box">
+			<div class="head-line">
+				<a href="/flc/detail?type=single_img&num=1"><%= imgs[1].headline%></a>
+			</div>
+			<div class="bottom-label">
+				<button type="button" class="type"><%= imgs[1].type%></button>
+				<button type="button" class="author bottom-same"><%= imgs[1].author%></button>
+				<button type="button" class="comment bottom-same"><%= imgs[1].comment%></button>
+				<span class="time bottom-same"><%= imgs[1].time%></span>
+			</div>
+		</div>
+		<div class="close-btn-box">
+			<button class="close-btn" type="button">×</button>
+			<span>不感兴趣</span>
+		</div>
+	</li>
+	<li class="single-img-li">
+		<img src="<%= JSON.parse(imgs[1].imgs_src).src_1%>" />
+		<div class="right-box">
+			<div class="head-line">
+				<a href="/flc/detail?type=single_img&num=1"><%= imgs[1].headline%></a>
+			</div>
+			<div class="bottom-label">
+				<button type="button" class="type"><%= imgs[1].type%></button>
+				<button type="button" class="author bottom-same"><%= imgs[1].author%></button>
+				<button type="button" class="comment bottom-same"><%= imgs[1].comment%></button>
+				<span class="time bottom-same"><%= imgs[1].time%></span>
+			</div>
+		</div>
+		<div class="close-btn-box">
+			<button class="close-btn" type="button">×</button>
+			<span>不感兴趣</span>
+		</div>
+	</li>
+	<li class="single-img-li">
+		<img src="<%= JSON.parse(imgs[1].imgs_src).src_1%>" />
+		<div class="right-box">
+			<div class="head-line">
+				<a href="/flc/detail?type=single_img&num=1"><%= imgs[1].headline%></a>
+			</div>
+			<div class="bottom-label">
+				<button type="button" class="type"><%= imgs[1].type%></button>
+				<button type="button" class="author bottom-same"><%= imgs[1].author%></button>
+				<button type="button" class="comment bottom-same"><%= imgs[1].comment%></button>
+				<span class="time bottom-same"><%= imgs[1].time%></span>
+			</div>
+		</div>
+		<div class="close-btn-box">
+			<button class="close-btn" type="button">×</button>
+			<span>不感兴趣</span>
+		</div>
+	</li>
+	<li class="single-img-li">
+		<img src="<%= JSON.parse(imgs[1].imgs_src).src_1%>" />
+		<div class="right-box">
+			<div class="head-line">
+				<a href="/flc/detail?type=single_img&num=1"><%= imgs[1].headline%></a>
+			</div>
+			<div class="bottom-label">
+				<button type="button" class="type"><%= imgs[1].type%></button>
+				<button type="button" class="author bottom-same"><%= imgs[1].author%></button>
+				<button type="button" class="comment bottom-same"><%= imgs[1].comment%></button>
+				<span class="time bottom-same"><%= imgs[1].time%></span>
+			</div>
+		</div>
+		<div class="close-btn-box">
+			<button class="close-btn" type="button">×</button>
+			<span>不感兴趣</span>
+		</div>
+	</li>
+	<li class="single-img-li">
+		<img src="<%= JSON.parse(imgs[1].imgs_src).src_1%>" />
+		<div class="right-box">
+			<div class="head-line">
+				<a href="/flc/detail?type=single_img&num=1"><%= imgs[1].headline%></a>
+			</div>
+			<div class="bottom-label">
+				<button type="button" class="type"><%= imgs[1].type%></button>
+				<button type="button" class="author bottom-same"><%= imgs[1].author%></button>
+				<button type="button" class="comment bottom-same"><%= imgs[1].comment%></button>
+				<span class="time bottom-same"><%= imgs[1].time%></span>
+			</div>
+		</div>
+		<div class="close-btn-box">
+			<button class="close-btn" type="button">×</button>
+			<span>不感兴趣</span>
+		</div>
+	</li>
+	<li class="single-img-li">
+		<img src="<%= JSON.parse(imgs[1].imgs_src).src_1%>" />
+		<div class="right-box">
+			<div class="head-line">
+				<a href="/flc/detail?type=single_img&num=1"><%= imgs[1].headline%></a>
+			</div>
+			<div class="bottom-label">
+				<button type="button" class="type"><%= imgs[1].type%></button>
+				<button type="button" class="author bottom-same"><%= imgs[1].author%></button>
+				<button type="button" class="comment bottom-same"><%= imgs[1].comment%></button>
+				<span class="time bottom-same"><%= imgs[1].time%></span>
+			</div>
+		</div>
+		<div class="close-btn-box">
+			<button class="close-btn" type="button">×</button>
+			<span>不感兴趣</span>
+		</div>
+	</li>
+	<li class="single-img-li">
+		<img src="<%= JSON.parse(imgs[1].imgs_src).src_1%>" />
+		<div class="right-box">
+			<div class="head-line">
+				<a href="/flc/detail?type=single_img&num=1"><%= imgs[1].headline%></a>
+			</div>
+			<div class="bottom-label">
+				<button type="button" class="type"><%= imgs[1].type%></button>
+				<button type="button" class="author bottom-same"><%= imgs[1].author%></button>
+				<button type="button" class="comment bottom-same"><%= imgs[1].comment%></button>
+				<span class="time bottom-same"><%= imgs[1].time%></span>
+			</div>
+		</div>
+		<div class="close-btn-box">
+			<button class="close-btn" type="button">×</button>
+			<span>不感兴趣</span>
+		</div>
+	</li>
+	<li class="single-img-li">
+		<img src="<%= JSON.parse(imgs[1].imgs_src).src_1%>" />
+		<div class="right-box">
+			<div class="head-line">
+				<a href="/flc/detail?type=single_img&num=1"><%= imgs[1].headline%></a>
+			</div>
+			<div class="bottom-label">
+				<button type="button" class="type"><%= imgs[1].type%></button>
+				<button type="button" class="author bottom-same"><%= imgs[1].author%></button>
+				<button type="button" class="comment bottom-same"><%= imgs[1].comment%></button>
+				<span class="time bottom-same"><%= imgs[1].time%></span>
+			</div>
+		</div>
+		<div class="close-btn-box">
+			<button class="close-btn" type="button">×</button>
+			<span>不感兴趣</span>
+		</div>
+	</li>
+	<li class="single-img-li">
+		<img src="<%= JSON.parse(imgs[1].imgs_src).src_1%>" />
+		<div class="right-box">
+			<div class="head-line">
+				<a href="/flc/detail?type=single_img&num=1"><%= imgs[1].headline%></a>
+			</div>
+			<div class="bottom-label">
+				<button type="button" class="type"><%= imgs[1].type%></button>
+				<button type="button" class="author bottom-same"><%= imgs[1].author%></button>
+				<button type="button" class="comment bottom-same"><%= imgs[1].comment%></button>
+				<span class="time bottom-same"><%= imgs[1].time%></span>
+			</div>
+		</div>
+		<div class="close-btn-box">
+			<button class="close-btn" type="button">×</button>
+			<span>不感兴趣</span>
+		</div>
+	</li>
+	<li class="question-answer-li">
+		<div class="head-line">
+			<a href="/flc/detail?type=question_answer&num=2">默认文本</a>
+		</div>
+		<div class="bottom-label">
+			<button type="button" class="author bottom-same">悟空问答</button>
+			<button type="button" class="comment bottom-same">131回答</button>
+			<span class="time bottom-same">24分钟前</span>
+		</div>
+		<div class="close-btn-box">
+			<button class="close-btn" type="button">×</button>
+			<span>不感兴趣</span>
+		</div>
+	</li>
+</ul>

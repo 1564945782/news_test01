@@ -16,7 +16,8 @@ global.mydb = mysql.createConnection({
     user: 'root',
     password: '123',
     port: 3306,
-    database: 'nodeserver'
+    database: 'nodeserver',
+    multipleStatements: true
 });
 mydb.connect();
 
