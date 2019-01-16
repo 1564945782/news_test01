@@ -10,11 +10,12 @@ window.onload = function () {
     h_searchnull();
     s_searchnull();
     newsup();
-    navlichange()
+    navlichange();
+    reicode()
 }
 
 
-// Ë¢ĞÂ
+// åˆ·æ–°
 function tool() {
     let refresh = document.querySelector('.tool li:nth-child(1)');
     refresh && (refresh.onclick = () => {
@@ -23,7 +24,7 @@ function tool() {
 }
 
 
-// »Øµ½¶¥²¿
+// å›åˆ°é¡¶éƒ¨
 function gotop() {
     let gotop = document.querySelector('.tool li:nth-child(2)');
     gotop && (gotop.onclick = () => {
@@ -33,7 +34,7 @@ function gotop() {
 }
 
 
-//header×ó±ßÒş²Ø¿é
+//headerå·¦è¾¹éšè—å—
 function lefthid() {
     let hlileft = document.querySelector('.h-hid-left-containerli');
     hlileft && (hlileft.onmouseenter = function () {
@@ -48,7 +49,7 @@ function lefthid() {
 
 
 
-//headerÓÒ±ßÒş²Ø¿é
+//headerå³è¾¹éšè—å—
 function righthid() {
     let hliright = document.querySelector('.h-hid-right-containerli');
     hliright && (hliright.onmouseenter = function () {
@@ -63,7 +64,7 @@ function righthid() {
 
 
 
-//ËÑË÷¿òĞ§¹û
+///æœç´¢æ¡†æ•ˆæœ
 function searchstyle() {
     let searchcontainer = document.querySelector('.searchcontainer');
     let searchinput = document.querySelector('.searchinput');
@@ -76,8 +77,8 @@ function searchstyle() {
 }
 
 
-//ËÑË÷ÒÔ±íµ¥ĞÎÊ½Ìá½»ÁË
-// ÉèÖÃÊäÈëÖµÎª¿ÕµÄÊ±ºò²»×ö¶¯×÷
+//æœç´¢ä»¥è¡¨å•å½¢å¼æäº¤äº†
+// è®¾ç½®è¾“å…¥å€¼ä¸ºç©ºçš„æ—¶å€™ä¸åšåŠ¨ä½œ
 function h_searchnull() {
     let searchinput = document.querySelector('.searchinput');
     let hform = document.getElementById('h-form');
@@ -100,7 +101,7 @@ function s_searchnull() {
 }
 
 
-//ĞÂÎÅ±êÌâµã»÷¡¢hoverÑùÊ½
+//æ–°é—»æ ‡é¢˜ç‚¹å‡»ã€hoveræ ·å¼
 
 function newstitile() {
     let newstitles = document.querySelectorAll('.newstitle');
@@ -119,10 +120,10 @@ function newstitile() {
 //     }
 // }
 
-// ÄÚÈİÇø×ó±ßµ¼º½À¸¹Ì¶¨¡¢µã»÷
+// å†…å®¹åŒºå·¦è¾¹å¯¼èˆªæ å›ºå®šã€ç‚¹å‡»
 
 
-//µã»÷ÊÖ·çÇÙĞ§¹û
+//ç‚¹å‡»æ‰‹é£ç´æ•ˆæœ
 // function leftnavclick() {
 //     let leftnav = document.querySelector('.leftnav');
 //     let flag = false;
@@ -142,28 +143,29 @@ function newstitile() {
 
 
 
-//»¬¶¯¹Ì¶¨µ¼º½À¸
+//æ»‘åŠ¨å›ºå®šå¯¼èˆªæ 
 function navfix() {
     let leftnav = document.querySelector('.leftnav');
     if (leftnav) {
-        const scrollstart = leftnav.offsetTop;    //ÔªËØ¾àÀë¶¥¶Ë¾àÀë
+        const scrollstart = leftnav.offsetTop;   //å…ƒç´ è·ç¦»é¡¶ç«¯è·ç¦»
         document.onscroll = () => {
 
             let newscontainer = document.querySelector('.newscontainer');
-            //    console.log(scrollstart)
-            // pageYOffsetÊó±ê¹ö¶¯µÄ¾àÀë
+           //    console.log(scrollstart)
+            // pageYOffseté¼ æ ‡æ»šåŠ¨çš„è·ç¦»
             // console.log(scrollstart)
             if (pageYOffset >= scrollstart) {
                 // console.log(window.pageYOffset)      
-                // °ÑscrollstartĞ´½øº¯Êı£¬²»ÊÇ´óÓÚµÈÓÚÒòÎªÔö¼Ófixedºó£¬scrollstart±ä³ÉÁË0
+                // æŠŠscrollstartå†™è¿›å‡½æ•°ï¼Œä¸æ˜¯å¤§äºç­‰äºå› ä¸ºå¢åŠ fixedåï¼Œscrollstartå˜æˆäº†0
                 leftnav.classList.add('fixed');
 
-                // ¸Ä±äÖĞ¼äµÄmargin£¨ÒòÎªnav¶¨Î»±ä³ÉÁËfixedÍÑÀëÎÄµµÁ÷£©
+               // æ”¹å˜ä¸­é—´çš„marginï¼ˆå› ä¸ºnavå®šä½å˜æˆäº†fixedè„±ç¦»æ–‡æ¡£æµï¼‰
+
 
 
                 let computedStyle = getComputedStyle(leftnav, null);
 
-                //    console.log(computedStyle.marginRight)    navµÄmargin
+                //    console.log(computedStyle.marginRight)    navçš„margin
                 //    leftnav.offsetWidth+computedStyle.marginRight
                 newscontainer.classList.add('move')
             } else {
@@ -175,11 +177,11 @@ function navfix() {
     }
 }
 
-//µ¼º½À¸li±äºì
-function navlichange(){
-    let leftnav = document.querySelector('.leftnav'); 
-    if(leftnav){     
-        let xli =  parseInt(document.querySelector('.forcolor').innerHTML);
+//å¯¼èˆªæ liå˜çº¢
+function navlichange() {
+    let leftnav = document.querySelector('.leftnav');
+    if (leftnav) {
+        let xli = parseInt(document.querySelector('.forcolor').innerHTML);
         (document.querySelectorAll('.leftnav a'))[xli].classList.add('leftnavclick')
     }
 }
@@ -187,7 +189,7 @@ function navlichange(){
 
 
 
-//ÂÖ²¥Í¼
+//è½®æ’­å›¾
 function lunbotu() {
     let ul = document.querySelector('.h-lunboimg-container');
     if (ul) {
@@ -214,7 +216,7 @@ function lunbotu() {
 
 
 
-//ĞÂÎÅÉÏ´«
+//æ–°é—»ä¸Šä¼ 
 function newsup() {
 
     let img = document.querySelector('input[id="newsimgfrom"]');
@@ -223,21 +225,21 @@ function newsup() {
 
     let upform = document.querySelector('.upform');
 
-    //±íµ¥ĞÂÎÅÌá½»±ØÌîÑéÖ¤
-    if(upform){
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á½»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤
+    if (upform) {
         upform.onsubmit = function () {
             document.querySelector('.forcheck').value = document.querySelector('input[name="sourselogfrom"]').files[0];
             if (document.querySelector('.forcheck').value == 'undefined'
                 || !document.querySelector('input[name="kind"]').value
                 || !document.querySelector('input[name="pinglunnum"]').value || !document.querySelector('input[name="sourcefrom"]').value || !document.querySelector('input[name="title"]').value
             ) {
-                alert('ĞÂÎÅ±êÌâ¡¢À´Ô´logo¡¢ĞÂÎÅÀ´Ô´ÉÌ¼Ò¡¢ÆÀÂÛÊı¡¢Àà±ğÎª±ØÌî')
+                alert('ï¿½ï¿½ï¿½Å±ï¿½ï¿½â¡¢ï¿½ï¿½Ô´logoï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´ï¿½Ì¼Ò¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½')
                 return false;
             }
         }
     }
-   
-//ajaxÍ¼Æ¬ÉÏ´«
+
+    //ajaxÍ¼Æ¬ï¿½Ï´ï¿½
     if (img) {
 
 
@@ -269,7 +271,7 @@ function newsup() {
         document.querySelector('.sourselogbtn').onclick = function () {
             document.querySelector('#sourselogfrom').click();
         }
-        //ajax Í¬²½ÒªÉÏ´«µÄÍ¼Æ¬
+        //ajax Í¬ï¿½ï¿½Òªï¿½Ï´ï¿½ï¿½ï¿½Í¼Æ¬
 
 
         logo.onchange = function () {
@@ -289,5 +291,17 @@ function newsup() {
                 });
         }
     }
+}
+
+
+//éªŒè¯ç 
+function reicode(){
+    let reimg=document.querySelector('.yanzhengimg');
+    if(reimg){
+        reimg.onclick=function(){
+            reimg.src='/ajm/yanzheng?'+Math.random();
+        }
+    }
+  
 }
 
