@@ -4,14 +4,14 @@
 }
 input:-webkit-autofill {-webkit-box-shadow: 0 0 0px 1000px white inset;}
 
-/* ****************ÈÈµã²¿·Ö******************* */
+/* ****************ï¿½Èµã²¿ï¿½ï¿½******************* */
 
-/* È¥µôËùÓÐa±êÇ©µÄÏÂ»®Ïß */
+/* È¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½aï¿½ï¿½Ç©ï¿½ï¿½ï¿½Â»ï¿½ï¿½ï¿½ */
 a {
     text-decoration: none;
 }
 
-/* Çå³ý¸¡¶¯ */
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 .clear::after {
     content: '';
     display: block;
@@ -27,7 +27,7 @@ a {
     /* overflow-x: hidden; */
 }
 
-/* Ë¢ÐÂ¡¢»Øµ½¶¥²¿ */
+/* Ë¢ï¿½Â¡ï¿½ï¿½Øµï¿½ï¿½ï¿½ï¿½ï¿½ */
 .tool {
     position: fixed;
     left: 1400px;
@@ -52,7 +52,7 @@ a {
     height: 36px;
 }
 
-/***************** header×ó±ß *******/
+/***************** headerï¿½ï¿½ï¿½ *******/
 .t-h-leftul {
     list-style-type: none;
     float: left;
@@ -82,7 +82,7 @@ a {
     top: -1px;
 }
 
-/* ×ó±ßÌìÆø */
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 .t-h-leftul li:nth-child(2) {
     width: 171px;
     display: flex;
@@ -97,7 +97,7 @@ a {
 }
 
 
-/* ×ó±ßµÄÊó±êÑùÊ½ */
+/* ï¿½ï¿½ßµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ */
 
 .t-h-leftul span:hover {
     cursor: pointer;
@@ -108,9 +108,9 @@ a {
     color: #999;
 }
 
-/* ***************headerÓÒ±ß********* */
+/* ***************headerï¿½Ò±ï¿½********* */
 
-/* //Í¼Æ¬ÉÏ´« */
+/* //Í¼Æ¬ï¿½Ï´ï¿½ */
 
 .upnewsimg {
     width: 100px;
@@ -129,7 +129,7 @@ a {
 .upform {
     width: 480px;
     color: #666;
-    font-family: Tahoma, Helvetica, "Microsoft Yahei", Î¢ÈíÑÅºÚ, Arial, STHeiti;
+    font-family: Tahoma, Helvetica, "Microsoft Yahei", Î¢ï¿½ï¿½ï¿½Åºï¿½, Arial, STHeiti;
     font-weight: 700;
     margin: 0 auto;
 }
@@ -205,7 +205,7 @@ a {
     color: #fff;
 }
 
-/* ÓÒ±ßÒþ²ØÀ¸ */
+/* ï¿½Ò±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 .h-hid-right ul {
     position: absolute;
     left: -47px;
@@ -242,7 +242,7 @@ a {
     display: none;
 }
 
-/* ×ó±ßÒþ²ØÀ¸ */
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 .h-hid-left-containerli {
     position: relative;
 }
@@ -257,7 +257,7 @@ a {
     display: none;
 }
 
-/* ÄÚÈÝÈÝÆ÷ */
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 .ctcontainer {
     width: 1170px;
     margin: 0 auto;
@@ -266,7 +266,7 @@ a {
     margin-top:20px; 
 }
 
-/* ÄÚÈÝ×ó²àµ¼º½À¸ */
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½àµ¼ï¿½ï¿½ï¿½ï¿½ */
 .leftnav {
     list-style: none;
     float: left;
@@ -284,8 +284,6 @@ a {
     line-height: 40px;
     text-align: center;
    
-    
-
 }
 
 .leftnav li a {
@@ -296,6 +294,11 @@ a {
     display: block;
     transition:color,background-color  0.1s;
     
+}
+#xinwenzaixian {
+    color: #ed4040;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 .leftnav li a:hover {
@@ -328,7 +331,7 @@ a {
     margin-left: 140px;
 }
 
-/* ÄÚÈÝÇøÖÐ¼äÄÚÈÝ */
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¼ï¿½ï¿½ï¿½ï¿½ï¿½ */
 
 .newscontainer {
     width: 660px;
@@ -338,7 +341,7 @@ a {
     /* height: 200px;; */
   
 }
-/* µÚÒ»¸öÐÂÎÅ */
+/* ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 .headnews {
     width: 100%;
     
@@ -377,7 +380,7 @@ a {
    margin-top:20px ;
 }
 
-/* ÆäËûÆÕÍ¨ÐÂÎÅ */
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ */
 .news {
     width: 100%;
     height: 130px;
@@ -386,7 +389,7 @@ a {
     align-items: center;
     
 }
-/* ÖÐ¼äÄÚÈÝ×ó±ß */
+/* ï¿½Ð¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 
 .h-imgnewsfromimga {
     width: 156px;
@@ -409,7 +412,7 @@ a {
 .img-container img:hover {
     transform: scale(1.1);
 } 
-/* ÖÐ¼äÄÚÈÝÓÒ±ß */
+/* ï¿½Ð¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò±ï¿½ */
 .contentothers {
     margin-left: 25px;
 }
@@ -420,7 +423,7 @@ a {
 }
 
 
-        /* ÎÞÍ¼±êÌâºÍÓÐÍ¼Êó±êhoverÑùÊ½ */
+        /* ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½hoverï¿½ï¿½Ê½ */
 .newstitle:hover {
     color: #406599;      
 }
@@ -446,7 +449,7 @@ a {
     line-height: 1.3;
 }
 
-/* ÖÐ¼äÄÚÈÝliÀïÓÒ±ßÏÂ°ëÇø */
+/* ï¿½Ð¼ï¿½ï¿½ï¿½ï¿½ï¿½liï¿½ï¿½ï¿½Ò±ï¿½ï¿½Â°ï¿½ï¿½ï¿½ */
 .others-btm  {
    list-style-type: none;
    margin-top: 10px;
@@ -473,7 +476,7 @@ a {
     overflow: hidden;
 }
 
-/* ÄÚÈÝÓÒ±ß */
+/* ï¿½ï¿½ï¿½ï¿½ï¿½Ò±ï¿½ */
 .content-right {
     float: left;
     /* background-color: red; */
@@ -482,7 +485,7 @@ a {
     margin-left: 30px;
     list-style: none;
 }
-/* ÄÚÈÝÇøÓÒ±ßËÑË÷¿ò */
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 .h-searchli {
     margin-top: 20px;
 }
@@ -521,7 +524,7 @@ a {
     border: 1px solid rgb(237, 64, 64) ;
 }
 
-/* ÄÚÈÝÇøÓÒ±ßÂÖ²¥Í¼ */
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò±ï¿½ï¿½Ö²ï¿½Í¼ */
 .h-lunbo {
     background-color: rgb(244, 245, 246);
     /* display: flex; */
@@ -577,8 +580,8 @@ a {
     
 }
 
-/* ***********ËÑË÷²¿·Ö************* */
-/* headÓÒ±ß²¿·ÖºÍÈÈµãµÄÍ·²¿Ò»Ñù */
+/* ***********ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½************* */
+/* headï¿½Ò±ß²ï¿½ï¿½Öºï¿½ï¿½Èµï¿½ï¿½Í·ï¿½ï¿½Ò»ï¿½ï¿½ */
 .s-body {
     background-color: rgb(241, 242, 243)
 }
@@ -598,7 +601,7 @@ a {
     position: relative;
     top: -0.5px;
 }
-/* ËÑË÷¿ò */
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 .s-container {
     padding-top: 20px;
   
@@ -635,7 +638,7 @@ a {
     outline: none;
 }
 
-/* ÄÚÈÝ */
+/* ï¿½ï¿½ï¿½ï¿½ */
 .s-container {
     width: 700px;
     height: 100px;
@@ -649,7 +652,7 @@ a {
 }
 
 
-/* 24Ð¡Ê±ÐÂÎÅ */
+/* 24Ð¡Ê±ï¿½ï¿½ï¿½ï¿½ */
 
 h4 {
     margin-top: 10px;
@@ -692,7 +695,7 @@ h4 {
     margin-left: 5px;
 }
 
-/* //¹ã¸æ */
+/* //ï¿½ï¿½ï¿½ */
 
 .h-adcontaniner-li {
     background-color: rgb(244, 245, 246);
@@ -707,7 +710,7 @@ width: 300px;
 height: 250px;
 }
 
-/* ÓÑÇéÁ´½Ó */
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 .linkli {
     background-color: rgb(244, 245, 246);
     margin-top: 50px;
