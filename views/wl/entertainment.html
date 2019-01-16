@@ -2,7 +2,8 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>示例页面</title>
+		<title>娱乐</title>
+		<link rel="shortcut icon" href="/img/wl/etm/wl_server_tx01.jpg" />
 		<link rel="stylesheet" href="/css/public.css" />
 		<link rel="stylesheet" href="/css/wl.css" />
 	</head>
@@ -441,7 +442,7 @@
 							</div>
 							<div id="ct-current-weather">
 								<ul>
-								<% for( let a=0;a<5;a++) {%>
+								<% for( let a=0;a<7;a++) {%>
 								<!-- <input type="hidden" class="wea" value=<%= data[a].wea%>> -->
 								<input type="hidden" class="leg" value=<%= data[a].leg%>  wea_d=<%= data[a].wea%>>
 									<li class="weather_day"><span data-num0='<%= a%>'><%= data[a].title%></span></li>
@@ -496,7 +497,7 @@
 				
 			</div>
 		</div>
-			<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 		<script src="/js/public.js"></script>
 		<script src="/js/wl_etm.js"></script>
 	</body>

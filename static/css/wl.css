@@ -718,7 +718,7 @@ img:hover{
         display: flex;
 }
 #ct-current-weather li{
-    height: 51px;
+    height: 45px;
     margin: 1px;
     /* width: 20%; */
     font-size: 15px;
@@ -730,10 +730,10 @@ img:hover{
     color: #f3f3f3
 }
 #ct-current-weather span{
-        display: inline-block;
-    width: 96%;
+    display: inline-block;
+    width: 137%;
     font-size: 14px;
-    /*padding: 3px;*/
+    margin-left: -8px;
 }
 
 

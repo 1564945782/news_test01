@@ -13,8 +13,8 @@ router.get('/funny',(req,res)=>{
 // 娱乐界面
 router.get('/entertainment',(req,res)=>{
 	//返回数据   成都
-	console.log(req.query.ajax_a);
-	console.log(req.query.c_url);
+	// console.log(req.query.ajax_a);
+	// console.log(req.query.c_url);
 	let city_url=req.query.c_url;
 	if(!city_url){
 		city_url='http://www.weather.com.cn/weather/101270101.shtml';
@@ -43,7 +43,7 @@ router.get('/entertainment',(req,res)=>{
 			return str.replace(/(^\s*)|(\s*$)/g, "");
 		}
 		weatherData.data=data;
-		console.log(weatherData);
+		// console.log(weatherData);
 		if(req.query.ajax_a==1){
 			res.json(weatherData);
 		}else{
